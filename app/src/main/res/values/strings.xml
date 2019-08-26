@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Subasta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Subasta del pueblo</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Ofertantes</string>
+    <string name="menu_gallery">Celulares</string>
+    <string name="menu_slideshow">Ofertas</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_test">Test</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="tv1">Ofertantes</string>
+    <string name="tp1">Ingrese nombres</string>
+    <string name="tp2">Ingrese cédula</string>
+    <string name="tp3">Ingrese deposito</string>
+    <string name="bt1">Guardar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="communicate">Communicate</string>
+</resources>
