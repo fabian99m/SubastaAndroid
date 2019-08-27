@@ -12,7 +12,8 @@
         android:background="@drawable/side_nav_bar">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/bt1"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="129dp"
             android:layout_height="43dp"
             android:layout_marginStart="161dp"
@@ -21,15 +22,16 @@
             android:layout_marginRight="162dp"
             android:layout_marginBottom="88dp"
             android:background="#3F51B5"
+            android:drawableStart="@drawable/content_save"
             android:drawableLeft="@drawable/content_save"
             android:text="@string/bt1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:drawableStart="@drawable/content_save" />
+            app:layout_constraintStart_toStartOf="parent" />
+
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
@@ -44,14 +46,14 @@
             android:textColorHighlight="#198A7F"
             android:textColorLink="#FFFFFF"
             android:textCursorDrawable="@color/colorPrimary"
-            app:layout_constraintBottom_toTopOf="@+id/editText4"
+            app:layout_constraintBottom_toTopOf="@+id/etCedula"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:targetApi="o" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/etCedula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
@@ -65,14 +67,14 @@
             android:inputType="number"
             android:textColorHighlight="#145A54"
             android:textCursorDrawable="@color/colorPrimary"
-            app:layout_constraintBottom_toTopOf="@+id/editText5"
+            app:layout_constraintBottom_toTopOf="@+id/etDeposito"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:targetApi="o" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/etDeposito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
@@ -86,7 +88,7 @@
             android:inputType="numberDecimal"
             android:textColorHighlight="#13534D"
             android:textCursorDrawable="@color/colorPrimary"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/bt1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +108,7 @@
             android:textColor="#041149"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintBottom_toTopOf="@+id/etNombre"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
