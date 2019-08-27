@@ -12,7 +12,7 @@
     <string name="menu_slideshow">Ofertas</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_test">Test</string>
-    <string name="menu_share">Share</string>
+    <string name="listOfer">Ofertantes</string>
     <string name="menu_send">Send</string>
     <string name="tv1">Ofertantes</string>
     <string name="tp1">Ingrese nombres</string>
@@ -21,6 +21,10 @@
     <string name="bt1">Guardar</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="communicate">Communicate</string>
+    <string name="hello_blank_fragment">Holaaaaaaaa</string>
+    <string name="listas">Listar</string>
+    <string name="deposito">Deposito</string>
+    <string name="cedula">Cédula</string>
+    <string name="nombre">Nombre</string>
+    <string name="todo">TODO</string>
 </resources>

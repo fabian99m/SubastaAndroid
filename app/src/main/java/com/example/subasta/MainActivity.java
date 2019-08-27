@@ -87,10 +87,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
         FragmentManager fragmentManager = getSupportFragmentManager();
-
-
 
         if (id == R.id.nav_home) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new FragOfertante()).commit();
@@ -101,7 +98,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tools) {
 
         } else if (id == R.id.nav_share) {
-
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new ListarOfertantes()).commit();
         } else if (id == R.id.nav_send) {
 
         }

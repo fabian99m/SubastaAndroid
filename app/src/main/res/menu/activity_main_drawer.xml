@@ -27,12 +27,12 @@
             android:title="@string/menu_test" />
     </group>
 
-    <item android:title="@string/communicate">
+    <item android:title="@string/listas">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
+                android:title="@string/listOfer" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

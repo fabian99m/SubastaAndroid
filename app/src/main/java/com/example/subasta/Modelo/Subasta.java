@@ -7,22 +7,22 @@ import java.util.List;
 
 public class Subasta {
 
-    public List<Ofertante> ofer ;
+    public ArrayList<Ofertante> ofer ;
 
 
     public Subasta() {
     }
 
-    public Subasta(List<Ofertante> ofer) {
+
+    public Subasta(ArrayList<Ofertante> ofer) {
         this.ofer = ofer;
     }
 
-    public List<Ofertante> getOfer() {
+    public ArrayList<Ofertante> getOfer() {
         return ofer;
     }
 
-
-    public void setOfer(List<Ofertante> ofer) {
+    public void setOfer(ArrayList<Ofertante> ofer) {
         this.ofer = ofer;
     }
 }
