@@ -19,12 +19,22 @@
     <string name="tp2">Ingrese cédula</string>
     <string name="tp3">Ingrese deposito</string>
     <string name="bt1">Guardar</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Holaaaaaaaa</string>
     <string name="listas">Listar</string>
     <string name="deposito">Deposito</string>
     <string name="cedula">Cédula</string>
     <string name="nombre">Nombre</string>
     <string name="todo">TODO</string>
+    <string name="cel">Celulares</string>
+    <string name="id">ID de celular</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string-array name="gamas">
+        <item>Baja</item>
+        <item>Media</item>
+        <item>Alta</item>
+    </string-array>
+    <string name="gama">Gama</string>
+    <string name="costo">Costo base</string>
+
 </resources>

@@ -2,9 +2,9 @@ package com.example.subasta.Modelo;
 
 public class Ofertante {
 
-   private String nombre;
+    private String nombre;
     private int cedula;
-    private  float deposito;
+    private float deposito;
 
 
     public Ofertante() {

@@ -11,15 +11,17 @@
         android:layout_height="match_parent"
         android:background="@drawable/side_nav_bar">
 
+
         <Button
             android:id="@+id/bt1"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="129dp"
-            android:layout_height="43dp"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
             android:layout_marginStart="161dp"
             android:layout_marginLeft="161dp"
-            android:layout_marginEnd="162dp"
-            android:layout_marginRight="162dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="161dp"
+            android:layout_marginRight="161dp"
             android:layout_marginBottom="88dp"
             android:background="#3F51B5"
             android:drawableStart="@drawable/content_save"
@@ -27,8 +29,9 @@
             android:text="@string/bt1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDeposito" />
 
         <EditText
             android:id="@+id/etNombre"
@@ -36,9 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
             android:layout_marginLeft="98dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:layout_marginBottom="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginRight="98dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="@string/tp1"
             android:importantForAutofill="no"
@@ -48,8 +52,9 @@
             android:textCursorDrawable="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/etCedula"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
             tools:targetApi="o" />
 
         <EditText
@@ -58,9 +63,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
             android:layout_marginLeft="98dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:layout_marginBottom="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginRight="98dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="@string/tp2"
             android:importantForAutofill="no"
@@ -69,8 +75,9 @@
             android:textCursorDrawable="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/etDeposito"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombre"
             tools:targetApi="o" />
 
         <EditText
@@ -79,9 +86,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
             android:layout_marginLeft="98dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:layout_marginBottom="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginRight="98dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="@string/tp3"
             android:importantForAutofill="no"
@@ -90,28 +98,30 @@
             android:textCursorDrawable="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/bt1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCedula"
             tools:targetApi="o" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="116dp"
-            android:layout_height="25dp"
+            android:layout_width="118dp"
+            android:layout_height="32dp"
             android:layout_marginStart="152dp"
             android:layout_marginLeft="152dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="153dp"
-            android:layout_marginRight="153dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginRight="152dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/tv1"
             android:textColor="#041149"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/etNombre"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.99" />
+            app:layout_constraintVertical_bias="0.49" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

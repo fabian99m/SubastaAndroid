@@ -1,13 +1,11 @@
 package com.example.subasta.Modelo;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 
 public class Subasta {
 
-    public ArrayList<Ofertante> ofer ;
+    public ArrayList<Ofertante> ofer;
 
 
     public Subasta() {

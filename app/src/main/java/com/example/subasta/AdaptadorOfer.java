@@ -6,18 +6,15 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.subasta.Modelo.Ofertante;
 
 import java.util.ArrayList;
 
-import  static  com.example.subasta.MainActivity.subas;
-
 public class AdaptadorOfer extends RecyclerView.Adapter<AdaptadorOfer.ViewHolderOfertantes> {
 
-  ArrayList<Ofertante> ofertante;
+    ArrayList<Ofertante> ofertante;
 
     public AdaptadorOfer(ArrayList<Ofertante> ofertante) {
         this.ofertante = ofertante;
@@ -26,16 +23,16 @@ public class AdaptadorOfer extends RecyclerView.Adapter<AdaptadorOfer.ViewHolder
     @NonNull
     @Override
     public ViewHolderOfertantes onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.lista_ofertantes,null,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.lista_ofertantes, null, false);
 
         return new ViewHolderOfertantes(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderOfertantes holder, int position) {
-    holder.nombre.setText(ofertante.get(position).getNombre());
-    holder.cedula.setText(String.valueOf(ofertante.get(position).getCedula()));
-    holder.deposito.setText((String.valueOf(ofertante.get(position).getDeposito())));
+        holder.nombre.setText(ofertante.get(position).getNombre());
+        holder.cedula.setText(String.valueOf(ofertante.get(position).getCedula()));
+        holder.deposito.setText((String.valueOf(ofertante.get(position).getDeposito())));
 
     }
 
@@ -46,7 +43,7 @@ public class AdaptadorOfer extends RecyclerView.Adapter<AdaptadorOfer.ViewHolder
 
     public class ViewHolderOfertantes extends RecyclerView.ViewHolder {
 
-        TextView nombre,cedula,deposito;
+        TextView nombre, cedula, deposito;
 
         public ViewHolderOfertantes(@NonNull View itemView) {
             super(itemView);

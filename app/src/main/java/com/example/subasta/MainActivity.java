@@ -1,31 +1,21 @@
 package com.example.subasta;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.subasta.Modelo.Ofertante;
 import com.example.subasta.Modelo.Subasta;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-
-import android.view.MenuItem;
-
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentManager;
-
-import android.view.Menu;
-
 import java.util.ArrayList;
-import  java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -90,15 +80,16 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_home) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new FragOfertante()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new FragOfertante()).commit();
         } else if (id == R.id.nav_gallery) {
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new FragCelular()).commit();
 
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_tools) {
 
         } else if (id == R.id.nav_share) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new ListarOfertantes()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new ListarOfertantes()).commit();
         } else if (id == R.id.nav_send) {
 
         }
