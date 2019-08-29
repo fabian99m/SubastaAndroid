@@ -1,6 +1,8 @@
 package com.example.subasta.Modelo;
 
-public class Ofertante {
+import java.io.Serializable;
+
+public class Ofertante implements Serializable {
 
     private String nombre;
     private int cedula;

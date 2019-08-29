@@ -1,5 +1,6 @@
 package com.example.subasta;
 
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,16 +12,20 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.subasta.Datos.Querys;
 import com.example.subasta.Modelo.Ofertante;
 import com.example.subasta.Modelo.Subasta;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
+
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    static Subasta subas = new Subasta(new ArrayList<Ofertante>());
+   public static Subasta subas = new Subasta(new ArrayList<Ofertante>());
+
 
 
     @Override
@@ -38,6 +43,15 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+
+    }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
     }
 
     @Override
@@ -92,10 +106,12 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.contenedor, new ListarOfertantes()).commit();
         } else if (id == R.id.nav_send) {
 
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }

@@ -11,9 +11,11 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.subasta.Datos.Querys;
 import com.example.subasta.Modelo.Ofertante;
 
 import static com.example.subasta.MainActivity.subas;
+
 
 public class FragOfertante extends Fragment implements View.OnClickListener {
 
@@ -39,22 +41,25 @@ public class FragOfertante extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.bt1) {
-            if (nombre.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
-                Toast.makeText(getActivity(), "Ingrese un nombre de ofertante!!", Toast.LENGTH_SHORT).show();
-            }
-            else if (cedula.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
-                Toast.makeText(getActivity(), "Ingrese un número de cédula!!", Toast.LENGTH_SHORT).show();
-            }
-            else if (deposito.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
-                Toast.makeText(getActivity(), "Ingrese deposito!!", Toast.LENGTH_SHORT).show();
-            } else {
-                subas.ofer.add(new Ofertante(nombre.getText().toString(), Integer.parseInt(cedula.getText().toString()), Float.parseFloat(deposito.getText().toString())));
-                Toast.makeText(getActivity(), "Ofertante guardado con éxito!", Toast.LENGTH_SHORT).show();
-                nombre.setText("");
-                cedula.setText("");
-                deposito.setText("");
-            }
+            GuardarOfertante();
+        }
+    }
 
+    public void GuardarOfertante() {
+        if (nombre.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
+            Toast.makeText(getActivity(), "Ingrese un nombre de ofertante!!", Toast.LENGTH_SHORT).show();
+        } else if (cedula.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
+            Toast.makeText(getActivity(), "Ingrese un número de cédula!!", Toast.LENGTH_SHORT).show();
+        } else if (deposito.getText().toString().isEmpty() || nombre.getText().toString().trim().equals("")) {
+            Toast.makeText(getActivity(), "Ingrese deposito!!", Toast.LENGTH_SHORT).show();
+        } else {
+            subas.ofer.add(new Ofertante(nombre.getText().toString(), Integer.parseInt(cedula.getText().toString()), Float.parseFloat(deposito.getText().toString())));
+            Toast.makeText(getActivity(), "Ofertante guardado con éxito!", Toast.LENGTH_SHORT).show();
+
+            Querys.GuardaOferBD(getActivity(), nombre, cedula, deposito);
+            nombre.setText("");
+            cedula.setText("");
+            deposito.setText("");
         }
     }
 

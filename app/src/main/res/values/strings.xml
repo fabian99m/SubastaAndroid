@@ -29,12 +29,12 @@
     <string name="id">ID de celular</string>
     <string name="marca">Marca</string>
     <string name="modelo">Modelo</string>
+    <string name="gama">Gama</string>
+    <string name="costo">Costo base</string>
     <string-array name="gamas">
         <item>Baja</item>
         <item>Media</item>
         <item>Alta</item>
     </string-array>
-    <string name="gama">Gama</string>
-    <string name="costo">Costo base</string>
 
 </resources>
